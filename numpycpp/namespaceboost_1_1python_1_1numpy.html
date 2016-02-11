@@ -222,7 +222,7 @@ template&lt;class T , int rank&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ndarray wrapped in an instance of boost::python::object. </dd></dl>
 
-<p>Definition at line <a class="el" href="numpy_8hpp_source.html#l00503">503</a> of file <a class="el" href="numpy_8hpp_source.html">numpy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8hpp_source.html#l00499">499</a> of file <a class="el" href="numpy_8hpp_source.html">numpy.hpp</a>.</p>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ template&lt;class T , int rank&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="numpy_8hpp_source.html#l00528">528</a> of file <a class="el" href="numpy_8hpp_source.html">numpy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8hpp_source.html#l00524">524</a> of file <a class="el" href="numpy_8hpp_source.html">numpy.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ template&lt;class T , int rank&gt; </div>
 <p>Create a new ndarray with uninitialized memory. </p>
 <p>The type parameter specifies the numpy data type number. You can use <a class="el" href="namespaceboost_1_1python_1_1numpy.html#adaf2273b7e86b82b3f13ac53b4d993bb" title="Obtain numpy&#39;s data type number from an boost-python object which should hold a ndarray. ">getItemtype&lt;T&gt;()</a> to obtain one. </p>
 
-<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00244">244</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00232">232</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ template&lt;class T &gt; </div>
 <p>By default, basic types are mapped to NPY_FLOAT32, NPY_FLOAT64, NPY_INT, NPY_LONG, NPY_LONGLONG, NPY_SHORT, NPY_BYTE, NPY_BOOL, NPY_UINT, NPY_ULONG, NPY_USHORT, NPY_UBYTE, NPY_ULONGLONG. PyObject* is mapped to NPY_OBJECT.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespaceboost_1_1python_1_1numpy.html#adaf2273b7e86b82b3f13ac53b4d993bb" title="Obtain numpy&#39;s data type number from an boost-python object which should hold a ndarray. ">getItemtype(const object &amp;arr)</a>; </dd></dl>
 
-<p>Definition at line <a class="el" href="numpy_8hpp_source.html#l00173">173</a> of file <a class="el" href="numpy_8hpp_source.html">numpy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8hpp_source.html#l00169">169</a> of file <a class="el" href="numpy_8hpp_source.html">numpy.hpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ template&lt;class T &gt; </div>
 <p>Returns the result of PyArray_TYPE() if arr is derived from ndarray, and -1 otherwise.</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespaceboost_1_1python_1_1numpy.html#adaf2273b7e86b82b3f13ac53b4d993bb" title="Obtain numpy&#39;s data type number from an boost-python object which should hold a ndarray. ">getItemtype&lt;T&gt;()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00253">253</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00241">241</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
 
 </div>
 </div>
@@ -394,7 +394,7 @@ template&lt;class T &gt; </div>
 </blockquote>
 <p>And it registers several converter routines in boost python for automatic conversion of &lt;arrayt&gt;, &lt;arraytbase&gt; and scalar types. </p>
 
-<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00208">208</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00196">196</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ template&lt;class T &gt; </div>
 <p>This function is specialized for basic number types: various sizes of integers, and float and double. This is a many to one correspondence. For instance depending on the platform, numpy types 'int' and 'long' which have different type numbers are both 8 bytes in length and therefore both correspond to the long type in c++!</p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="namespaceboost_1_1python_1_1numpy.html#adaf2273b7e86b82b3f13ac53b4d993bb" title="Obtain numpy&#39;s data type number from an boost-python object which should hold a ndarray. ">getItemtype&lt;T&gt;()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00352">352</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00340">340</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
 
 </div>
 </div>
@@ -455,14 +455,14 @@ template&lt;class T &gt; </div>
 <p>Creates a new ndarray filled with zeros. </p>
 <p>The type parameter specifies the numpy data type number. You can use <a class="el" href="namespaceboost_1_1python_1_1numpy.html#adaf2273b7e86b82b3f13ac53b4d993bb" title="Obtain numpy&#39;s data type number from an boost-python object which should hold a ndarray. ">getItemtype&lt;T&gt;()</a> to obtain one. </p>
 
-<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00236">236</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="numpy_8cpp_source.html#l00224">224</a> of file <a class="el" href="numpy_8cpp_source.html">numpy.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 27 2016 10:03:48 for numpycpp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 11 2016 19:55:18 for numpycpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
